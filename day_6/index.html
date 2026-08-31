@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NTI Mini Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>NTI Mini Store</h1>
+
+  <div class="form-box">
+    <h2 id="formTitle">Add Product</h2>
+
+    <input type="text" id="nameInput" placeholder="Name">
+    <input type="text" id="categoryInput" placeholder="Category">
+    <input type="number" id="priceInput" placeholder="Price">
+    <input type="number" id="quantityInput" placeholder="Quantity">
+
+    <br><br>
+
+    <button id="addBtn" onclick="handleAdd()">Add</button>
+    <button id="updateBtn" onclick="handleUpdate()" class="hide">Update</button>
+    <button id="cancelBtn" onclick="cancelEdit()" class="hide">Cancel</button>
+  </div>
+
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Price</th>
+      <th>Qty</th>
+      <th>Actions</th>
+    </tr>
+    <tbody id="tableBody"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
